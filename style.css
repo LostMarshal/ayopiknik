@@ -4,6 +4,12 @@
     color: antiquewhite;
 }
 
+.firstpage {
+ background-image: url(images/Group_571.png);
+ background-size:cover;
+ height: 100vh ;
+}
+
 .ayopiknik {
     max-width: 140px;
     margin: 20px;
@@ -30,6 +36,27 @@ ul {
     text-decoration: none;
   }
 
+  li a:hover {
+    color: darkorange;
+  }
+
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: darkorange;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
   @font-face {
     font-family: Gilroy;
     src: "font\Gilroy\Gilroy-Light.otf";
@@ -37,4 +64,143 @@ ul {
   
   div {
     font-family: Gilroy;
+  }
+
+  h1 {
+    color: darkorange;
+    margin-bottom: 30px;
+  }
+  
+  h5{
+    color: white;
+  }
+
+  .fristext {
+    align-items: center;
+    text-align: center;
+    margin-top: 175px;
+    margin-bottom: 175px;
+  }
+
+  .button {
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: white;
+  }
+
+  .button1 {
+    background-color: darkorange;
+    border-color: darkorange;
+    border-radius: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+  .button1:hover {
+    background-color: rgb(190, 105, 0);
+    color: white;
+  }
+
+  .button2 {
+    border-color: white;
+    background-color: transparent;
+    border-radius: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+  .button2:hover {
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+  }
+  
+  .bookingan {
+    background-color: white;
+    margin: auto;
+  }
+
+   /* Style the form - display items horizontally */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: rgb(212, 212, 212);
+  border: 1px solid #ddd;
+}
+
+.form-inline select {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: rgb(212, 212, 212);
+  border: 1px solid #ddd;
+}
+
+select:required:invalid {
+  color: gray;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: black;
+}
+
+/* Style the submit button */
+.form-inline button {
+  font-weight: bolder;
+  padding: 10px 20px;
+  background-color: darkorange;
+  border: 1px solid darkorange;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: rgb(190, 105, 0);
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+} 
+
+  .secondpage {
+    background-image: url(images/Group_572.png);
+    background-size: cover;
+    height: 75vh;
+  }
+
+  .about {
+    padding-top: 150px;
+    text-align: center;
   }

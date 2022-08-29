@@ -12,18 +12,50 @@
         <script src="script.js"></script>
     </head>
 
-    <body background="images\Group_571.png">
-        <div class="ayam">
-            <ul>
-                <img href="#" class="ayopiknik" src="images\ayopiknik.png">
-                <li><a href="#">Kontak</a></li>
-                <li><a href="#">Galeri</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Testimoni</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Tentang Kami</a></li>
-                <li><a href="#">Beranda</a></li>
-            </ul>
+    <body>
+        <div class="firstpage">
+            <div class="navibar">
+                <ul>
+                    <img href="#" class="ayopiknik" src="images\ayopiknik.png">
+                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#">Galeri</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Testimoni</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Beranda</a></li>
+                </ul>
+            </div>
+            <div class="fristext">
+                <h1>mau pergi kemana kita?</h1>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non euismod nisl</h5>
+                <button class="button button1" href="#"> Pesan Sekarang</button>
+                <button class="button button2" href="#"> Pelajari Sekarang</button>
+            </div>
+            <div class="bookingan col-md-8">
+                <form class="form-inline" action="/action_page.php">
+                    <input type="email" id="email" placeholder="Enter email" name="email">
+                    <select required>
+                        <option value="" disabled selected>Jumlah Hari</option>
+                        <option value="1">Jumlah Hari</option>
+                        <option value="2">Two</option>
+                    </select>
+                    <select required>
+                        <option value="" disabled selected>Jumlah Anggota</option>
+                        <option value="1">Jumlah Anggota</option>
+                        <option value="2">Two</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form> 
+            </div>
+        </div>
+        <div class="secondpage">
+            <div class="about">
+                <span style="color: grey; font-size:x-large;">tentang</span> <span style="color: darkorange; font-size: x-large;" >kami</span>
+                <p style="color: grey; margin-top: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                <p style="color: grey;">tempor incididunt ut labore et dolore magna aliqua. Sed faucibus turpis</p>
+                <p style="color: grey;">in eu mi bibendum neque egestas. Elementum pulvinar etiam non quam lacus suspendisse</p>
+            </div>
         </div>
     </body>
 </html>

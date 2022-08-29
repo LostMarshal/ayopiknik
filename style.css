@@ -29,3 +29,12 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
   }
+
+  @font-face {
+    font-family: Gilroy;
+    src: "font\Gilroy-FREE\Gilroy-Light.otf";
+  }
+  
+  div {
+    font-family: Gilroy;
+  }

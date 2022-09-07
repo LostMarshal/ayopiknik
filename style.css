@@ -214,6 +214,22 @@ option {
     padding-top: 125px;
     text-align: center;
   }
+  .about3 {
+    padding-top: 125px;
+    text-align: center;
+  }
+  .about4 {
+    padding-top: 125px;
+    text-align: center;
+  }
+  .about5 {
+    padding-top: 125px;
+    text-align: center;
+  }
+  .about6 {
+    padding-top: 125px;
+    text-align: center;
+  }
 
   .img-section{
     display: inline-flex;
@@ -221,13 +237,17 @@ option {
     justify-content: center;
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 125px;
+    margin-bottom: 100px;
   }
 
   .fourthpage {
     background-image: url(images/Group_573.png);
     background-size: cover;
-    height: 150vh;
+    height: 160vh;
+  }
+
+  .img-container {
+    position: relative;
   }
 
   .imgrow1{
@@ -235,6 +255,11 @@ option {
     align-content: center;
     justify-content: center;
     text-align: center;
+  }
+
+  .imgrow1 img{
+    width: 95%;
+    height: 95%;
   }
 
   .imgrow2{
@@ -245,18 +270,54 @@ option {
     text-align: center;
   }
 
-  a.pantuyy::after {
-    content: '';
-    background: black;
-    width: 100%;
-    height: 100%;
+  .imgrow2 img{
+    width: 95%;
+    height: 95%;
+  }
+
+  .fdae1::after{
+    content: "Pantai Parangtritis";
+    background: darkorange;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    height: 50px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 255px;
+    left: 177px;
     opacity: 0;
     transition: opacity 0.5s ease;
   }
 
-  a.pantuyy:hover::after {
+  .fdae1:hover::after{
     opacity: 0.5;
+  }
+
+  .sixthpage {
+    background-image: url(images/Group_575.png);
+    background-size: cover;
+    padding-bottom: 100px;
+  }
+
+  .tenthpage {
+    background-image: url(images/MaskGroup67.png);
+    background-size: contain;
+  }
+
+  .tenthpagecontent{
+    display: flex;
+    margin-top: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .conlef{
+    background-color: grey;
+    padding: 35px;
+  }
+
+  .conrig{
+    background-color: darkorange;
+    padding: 35px;
   }

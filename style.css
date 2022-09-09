@@ -480,7 +480,7 @@ h3 {
   background-color: rgb(190, 105, 0);
 }
 
-/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+
 @media (max-width: 800px) {
   .formi input {
     margin: 10px 0;

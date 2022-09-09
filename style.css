@@ -59,9 +59,9 @@
 
   @font-face {
     font-family: Gilroy;
-    src: "font\Gilroy\Gilroy-Light.otf";
+    src: 'font\Gilroy\Gilroy-Light.otf';
   }
-  
+
   div {
     font-family: Gilroy;
   }
@@ -159,13 +159,13 @@
   border: 1px solid #ddd;
 }
 
-select:required:invalid {
+.form-inline select:required:invalid {
   color: gray;
 }
-option[value=""][disabled] {
+.form-inline option[value=""][disabled] {
   display: none;
 }
-option {
+.form-inline option {
   color: black;
 }
 
@@ -392,15 +392,10 @@ h3 {
   text-align: center;
 }
 
-/* csssssss */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-body { overflow-x: hidden; font-family: roboto; -webkit-font-smoothing: antialiased; margin: 0;}
-.flex { display: -webkit-flex; display: flex; -webkit-flex-direction: row;  flex-direction: row; -webkit-justify-content: flex-start; justify-content: flex-start;}
-
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: Gilroy;
   box-sizing: border-box;
 }
 
@@ -449,4 +444,59 @@ body { overflow-x: hidden; font-family: roboto; -webkit-font-smoothing: antialia
 
 #accordion label + input[type="radio"]:checked + .content{
   max-height: 400px;
+}
+
+.eleventhpage {
+  display: flex;
+  padding: 35px;
+  background-image: url(images/Group_574.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Add some margins for each label */
+.formi label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.formi input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: white;
+  color: lightgray;
+  border: 1px solid lightgray;
+}
+.formi button {
+  font-weight: bolder;
+  padding: 10px 20px;
+  background-color: darkorange;
+  border: 1px solid darkorange;
+  color: white;
+}
+
+.formi button:hover {
+  background-color: rgb(190, 105, 0);
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .formi input {
+    margin: 10px 0;
+  }
+
+  .formi {
+    flex-direction: column;
+    align-items: stretch;
+  }
+} 
+
+.forminlain{
+  display: flex;
+}
+
+.ingpot{
+  text-align: left;
+  vertical-align: top;
 }
